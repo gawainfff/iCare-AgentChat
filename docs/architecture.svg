@@ -47,7 +47,7 @@
   <!-- ===== Worker ===== -->
   <rect x="340" y="450" width="420" height="96" rx="12" fill="#FFF3EC" stroke="#F47B52" stroke-width="1.4"/>
   <text x="550" y="479" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="17" font-weight="700" fill="#4A3F38">Worker 进程</text>
-  <text x="550" y="503" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="12.5" fill="#6B5C51">记忆抽取 · 合并 · 画像重算</text>
+  <text x="550" y="503" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="12.5" fill="#6B5C51">记忆抽取 · 三判定消解 · 索引投影</text>
   <text x="550" y="524" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#A29284">崩了会被回收重试；旧 Worker 提交不了（幂等 + fencing）</text>
 
   <!-- 存储总线 -->
@@ -67,8 +67,8 @@
 
   <rect x="338" y="576" width="210" height="84" rx="12" fill="#FFFFFF" stroke="#F47B52" stroke-width="1.2"/>
   <text x="443" y="604" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="700" fill="#4A3F38">MongoDB 7</text>
-  <text x="443" y="626" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#8A7A6D">消息 · 记忆 · 事件 · 队列</text>
-  <text x="443" y="645" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11" fill="#F47B52">事实源（不可再生）</text>
+  <text x="443" y="626" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#8A7A6D">消息 · 记忆 · 出处 · 队列</text>
+  <text x="443" y="645" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11" fill="#F47B52">权威数据（不可再生）</text>
 
   <rect x="572" y="576" width="210" height="84" rx="12" fill="#FFFFFF" stroke="#F47B52" stroke-width="1.2" stroke-dasharray="5 3"/>
   <text x="677" y="604" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="15" font-weight="700" fill="#4A3F38">Qdrant</text>
@@ -88,16 +88,17 @@
   <text x="980" y="330" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10.5" fill="#A29284">deepseek-v4-flash</text>
   <text x="980" y="364" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#6B5C51">向量（1024 维）</text>
   <text x="980" y="382" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10.5" fill="#A29284">text-embedding-v3</text>
-  <text x="980" y="416" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#6B5C51">精排</text>
-  <text x="980" y="434" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10.5" fill="#A29284">qwen3-rerank</text>
-  <text x="980" y="468" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#6B5C51">宠物立绘生成</text>
-  <text x="980" y="504" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10" fill="#B7A79A">模型路由由配置驱动</text>
+  <text x="980" y="416" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#6B5C51">宠物立绘 / 表情</text>
+  <text x="980" y="434" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10.5" fill="#A29284">qwen-image-2.0（离线）</text>
+  <text x="980" y="468" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="11.5" fill="#6B5C51">召回排序</text>
+  <text x="980" y="486" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10.5" fill="#A29284">RRF + 多信号（应用内）</text>
+  <text x="980" y="510" text-anchor="middle" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="10" fill="#B7A79A">模型路由由配置驱动</text>
 
   <line x1="760" y1="272" x2="874" y2="272" stroke="#C9B5A4" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowSoft)"/>
   <line x1="760" y1="498" x2="874" y2="498" stroke="#C9B5A4" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#arrowSoft)"/>
 
   <!-- ===== 脚注 ===== -->
   <line x1="60" y1="686" x2="1060" y2="686" stroke="#EADDD0" stroke-width="1"/>
-  <text x="60" y="710" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="12" fill="#8A7A6D">事实源 = 不可再生的权威数据；投影 = 可由事实重建的索引。删一条记忆必须同时删两处，否则要么搜得到已删除内容，要么重建索引后它又回来。</text>
+  <text x="60" y="710" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="12" fill="#8A7A6D">权威数据 = 不可再生的原文、Memory 与出处；投影 = 可由 Memory 重建的向量索引。删一条记忆必须同时删两处，否则要么搜得到已删除内容，要么重建索引后它又回来。</text>
   <text x="60" y="732" font-family="system-ui,-apple-system,'Segoe UI','Microsoft YaHei',sans-serif" font-size="12" fill="#8A7A6D">模型调用、存储访问都是端口-适配器里的适配器：业务层只认 domain/ports.py 的 Protocol，换实现不动业务代码。</text>
 </svg>
